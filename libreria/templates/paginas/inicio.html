@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block titulo  %} Inicio {% endblock %}
+
+{% block contenido  %}
+
+
+<div class="row align-items-md-stretch">
+    <div class="col-md-6">
+        
+            <h1>Bienvenido al sitio de la librería</h1>
+
+            <style>
+                h1 {
+                font-size: 5vw;
+                color: transparent;
+                background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+                background-clip: text;
+                -webkit-background-clip: text;
+            }
+            </style>
+
+            <p class="lead">Empezar a ingresar libros</p>
+            <a
+                name=""
+                id=""
+                class="btn btn-info"
+                href="{% url 'libros' %}"
+                role="button"
+                >Comenzar</a
+            >
+            
+    </div>
+    <div class="col-md-6">
+        </div>
+    </div>
+</div>
+
+{% endblock %}
