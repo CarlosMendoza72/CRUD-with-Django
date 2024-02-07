@@ -75,7 +75,16 @@ WSGI_APPLICATION = 'sistema.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-
+DATABASE = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'crud',
+        'USER': 'root',
+        'PASSWORD': 'rana1456',
+        'HOST': 'localhost',
+        'PORT': '3306'
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
